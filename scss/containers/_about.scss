@@ -6,13 +6,18 @@
 }
 
 .about-me {
+  width: 50%;
+  background-color: $blue;
   text-align: center;
   opacity: 0;
+  padding: 30px;
   transition: all 1s;
+  h3 {
+    color: white;
+  }
 }
 
 .about-photo {
-  border-radius: 50%;
   width: 200px;
   margin-top: 20px;
 }
