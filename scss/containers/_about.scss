@@ -1,5 +1,18 @@
 #about {
+  @include center-padding;
+  padding-top: 50px;
   background: white;
   width: 100vw;
-  height: 10000px;
+}
+
+.about-me {
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.about-photo {
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 20px;
 }

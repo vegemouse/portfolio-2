@@ -97,8 +97,12 @@ h2 {
   font-size: 2em;
   font-weight: bold; }
 
+h3 {
+  color: black;
+  font-size: 2.5em; }
+
 body {
-  background-color: #a2dbc1;
+  background-color: #d0ead4;
   overflow-x: hidden; }
 
 nav {
@@ -127,8 +131,8 @@ nav {
 
 #intro {
   width: 100vw;
-  height: 80vh;
-  background-color: #a2dbc1;
+  height: 90vh;
+  background-color: #d0ead4;
   position: relative; }
   #intro h1 {
     position: absolute;
@@ -176,8 +180,19 @@ nav {
         top: 70%; } }
 
 #about {
+  padding: 0 20vw;
+  padding-top: 50px;
   background: white;
-  width: 100vw;
-  height: 10000px; }
+  width: 100vw; }
+
+.about-me {
+  text-align: center;
+  opacity: 0;
+  transition: all 1s; }
+
+.about-photo {
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=application.css.map */
