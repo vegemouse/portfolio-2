@@ -7,7 +7,7 @@ $(document).ready(function() {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: ($(hash).offset().top - 50)
       }, 400, function(){
         window.location.hash = hash;
       });
@@ -37,6 +37,11 @@ $(document).ready(function() {
     windowScrollPosBottom = windowHeight + windowScrollPosTop;
 
     $("#about").revealOnScroll();
+    $("#projects").revealOnScroll();
+
+    for (i = 0; i < 15; i++) {
+      $(".project:nth-of-type(" + i + ")").revealOnScroll();
+    }
 
   });
 

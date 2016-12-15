@@ -100,8 +100,16 @@ h2 {
 h3 {
   font-size: 2.5em; }
 
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: lowercase;
+  font-size: 2em; }
+
+h5 {
+  font-size: 1.4em; }
+
 * {
-  transition: all 200ms; }
+  transition: all 100ms; }
 
 body {
   height: 1000vh;
@@ -186,8 +194,8 @@ nav {
   padding: 0 10vw;
   width: 100vw;
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   opacity: 0;
   transition: all 1s; }
   @media screen and (max-width: 600px) {
@@ -207,6 +215,99 @@ nav {
     margin-bottom: 20px; }
 
 .skills {
-  flex: 1; }
+  position: relative;
+  flex: 1;
+  background-color: #ffeaf4;
+  max-width: 400px;
+  padding: 20px 0;
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 20px #988; }
+  .skills h4 {
+    margin: 10px;
+    letter-spacing: 2px;
+    font-weight: bold; }
+  .skills ul li {
+    margin: 10px; }
+  .skills::before {
+    content: "";
+    position: absolute;
+    height: 110px;
+    width: 150px;
+    background-image: url(../img/tape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+#projects {
+  padding: 0 10vw;
+  background-color: #fff9fc;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 0;
+  transition: all 1s; }
+  @media screen and (max-width: 600px) {
+    #projects {
+      display: block; } }
+  #projects h3 {
+    flex: 0 0 100%;
+    margin: 50px 0; }
+
+.project {
+  margin: 5px;
+  flex: 1 32%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 500ms; }
+  .project-description {
+    opacity: 0;
+    position: absolute;
+    background: #d0ead4;
+    width: 100%;
+    height: 100%;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all 400ms ease-out; }
+    .project-description:hover {
+      top: 0;
+      opacity: 1; }
+  .project img {
+    filter: saturate(0.7) opacity(0.8);
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover; }
+
+.description-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10%;
+  width: 100%; }
+  .description-content h5 {
+    color: #153872;
+    margin-bottom: 10px; }
+  .description-content p {
+    color: black;
+    line-height: 1.3em;
+    padding-bottom: 10px; }
+  .description-content i {
+    font-size: 1.7em;
+    margin: 0 5px;
+    color: #153872; }
+    .description-content i:hover {
+      transform: scale(1.1); }
 
 /*# sourceMappingURL=application.css.map */

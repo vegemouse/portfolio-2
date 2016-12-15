@@ -1,0 +1,74 @@
+#projects {
+  @include center-padding;
+  @include flex-break;
+  background-color: $pink;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 0;
+  transition: all 1s;
+  h3 {
+    flex: 0 0 100%;
+    margin: 50px 0;
+  }
+}
+
+.project {
+  margin: 5px;
+  flex: 1 32%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 500ms;
+  &-description {
+    opacity: 0;
+    position: absolute;
+    background: $teal;
+    width: 100%;
+    height: 100%;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all 400ms ease-out;
+    &:hover {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  img {
+    filter: saturate(0.7) opacity(0.8);
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.description-content {
+  @include center-it;
+  padding: 10%;
+  width: 100%;
+  h5 {
+    color: $blue;
+    margin-bottom: 10px;
+  }
+  p {
+    color: black;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+  }
+  i {
+    font-size: 1.7em;
+    margin: 0 5px;
+    color: $blue;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}
