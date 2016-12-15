@@ -36,7 +36,7 @@ $(document).ready(function() {
     windowScrollPosTop = $(window).scrollTop();
     windowScrollPosBottom = windowHeight + windowScrollPosTop;
 
-    $(".about-me").revealOnScroll();
+    $("#about").revealOnScroll();
 
   });
 
