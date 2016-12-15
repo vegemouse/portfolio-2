@@ -1,0 +1,29 @@
+div {
+  font-family: $regular-font;
+}
+
+a {
+  font-family: $regular-font;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    color: $pink;
+  }
+}
+
+h1, h2 {
+  text-transform: lowercase;
+  font-family: $header-font;
+}
+
+h1 {
+  color: $blue;
+  font-size: 7em;
+
+}
+
+h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}

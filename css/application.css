@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Roboto:300,400,700");
+@keyframes fadeUp {
+  0% {
+    top: 60%;
+    opacity: 0; }
+  100% {
+    top: 50%;
+    opacity: 1; } }
+@keyframes cloudLeft {
+  0% {
+    left: -100vw; }
+  100% {
+    left: -30vw; } }
+@keyframes cloudRight {
+  0% {
+    right: -100vw; }
+  100% {
+    right: -30vw; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes navDrop {
+  0% {
+    top: -50px; }
+  100% {
+    top: 0; } }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+div {
+  font-family: "Roboto", sans-serif; }
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 200ms ease-in-out; }
+  a:hover {
+    color: #e6c1df; }
+
+h1, h2 {
+  text-transform: lowercase;
+  font-family: "Josefin Sans", sans-serif; }
+
+h1 {
+  color: #153872;
+  font-size: 7em; }
+
+h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: bold; }
+
+body {
+  background-color: #a2dbc1;
+  overflow-x: hidden; }
+
+nav {
+  padding: 0 20vw;
+  background-color: #153872;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1em;
+  position: fixed;
+  text-transform: lowercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  z-index: 20;
+  animation: navDrop 500ms ease-out forwards; }
+  nav a {
+    color: white;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+    border-bottom: 0;
+    transition: all 250ms ease-in-out; }
+    nav a:hover {
+      transform: scale(1.1); }
+
+#intro {
+  width: 100vw;
+  height: 75vh;
+  background-color: #a2dbc1;
+  position: relative; }
+  #intro h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    animation: fadeUp 1.5s ease-out forwards;
+    text-align: center; }
+    @media screen and (max-width: 1200px) {
+      #intro h1 {
+        font-size: 5em; } }
+  #intro::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../img/cloud-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    animation: cloudLeft 1.5s ease-out forwards; }
+  #intro::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../img/cloud-2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    animation: cloudRight 1.5s ease-out forwards; }
+  #intro h2 {
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    animation: fadeIn 500ms 1.5s ease-in-out backwards; }
+    @media screen and (max-width: 855px) {
+      #intro h2 {
+        font-size: 1.4em;
+        top: 75%; } }
+
+#about {
+  background: white;
+  width: 100vw;
+  height: 10000px; }
+
+/*# sourceMappingURL=application.css.map */

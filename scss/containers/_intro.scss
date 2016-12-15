@@ -1,0 +1,55 @@
+
+#intro {
+  width: 100vw;
+  height: 75vh;
+  background-color: $teal;
+  position: relative;
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    animation: fadeUp 1.5s ease-out forwards;
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+      font-size: 5em;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../img/cloud-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    animation: cloudLeft 1.5s ease-out forwards;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../img/cloud-2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    animation: cloudRight 1.5s ease-out forwards;
+  }
+  h2 {
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    animation: fadeIn 500ms 1.5s ease-in-out backwards;
+    @media screen and (max-width: 855px) {
+      font-size: 1.4em;
+      top: 75%;
+    }
+  }
+}
