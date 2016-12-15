@@ -1,9 +1,19 @@
 $(document).ready(function() {
 
-  var windowHeight = $(window).height();
-  var windowScrollPosTop = $(window).scrollTop();
-  var windowScrollPosBottom = windowHeight + windowScrollPosTop;
-
+  // smooth scroll function
+  $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 
 // jQuery reveral on scroll method. Set opacity on element to 0 before using
 
@@ -27,9 +37,6 @@ $(document).ready(function() {
     windowScrollPosBottom = windowHeight + windowScrollPosTop;
 
     $(".about-me").revealOnScroll();
-
-
-
 
   });
 
