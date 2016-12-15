@@ -1,7 +1,7 @@
 
 #intro {
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   background-color: $teal;
   position: relative;
   h1 {
@@ -49,7 +49,7 @@
     animation: fadeIn 500ms 1.5s ease-in-out backwards;
     @media screen and (max-width: 855px) {
       font-size: 1.4em;
-      top: 75%;
+      top: 70%;
     }
   }
 }

@@ -80,7 +80,7 @@ div {
 a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  transition: all 200ms ease-in-out; }
+  transition: all 100ms ease-out; }
   a:hover {
     color: #e6c1df; }
 
@@ -127,7 +127,7 @@ nav {
 
 #intro {
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   background-color: #a2dbc1;
   position: relative; }
   #intro h1 {
@@ -173,7 +173,7 @@ nav {
     @media screen and (max-width: 855px) {
       #intro h2 {
         font-size: 1.4em;
-        top: 75%; } }
+        top: 70%; } }
 
 #about {
   background: white;
