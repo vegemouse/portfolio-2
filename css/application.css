@@ -101,6 +101,9 @@ h3 {
   color: black;
   font-size: 2.5em; }
 
+* {
+  transition: all 200ms; }
+
 body {
   background-color: #d0ead4;
   height: 1000vh;
@@ -183,29 +186,29 @@ nav {
 #about {
   padding: 0 10vw;
   background: white;
-  height: 70vh;
   width: 100vw;
   display: flex;
-  align-items: center; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  @media screen and (max-width: 600px) {
+    #about {
+      display: block; } }
 
 .about-me {
-  width: 50%;
-  padding: 20px;
-  background-color: #153872;
-  text-align: center;
+  flex: 1;
   opacity: 0;
-  padding: 30px;
   transition: all 1s; }
-  .about-me::after {
-    content: "";
-    clear: both;
-    display: table; }
   .about-me h3 {
-    color: white;
     margin-bottom: 30px; }
 
-.about-photo {
-  width: 200px;
-  float: left; }
+#description {
+  padding: 20px 0;
+  text-align: left;
+  line-height: 1.4em; }
+  #description p {
+    margin-bottom: 20px; }
+
+.skills {
+  flex: 1; }
 
 /*# sourceMappingURL=application.css.map */

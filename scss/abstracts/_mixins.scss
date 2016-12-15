@@ -2,10 +2,8 @@
   padding: 0 10vw;
 }
 
-@mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
+@mixin flex-break {
+  @media screen and (max-width: 600px) {
+    display: block;
   }
 }
