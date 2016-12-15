@@ -1,11 +1,11 @@
 #about {
   @include center-padding;
   @include flex-break;
-  background: white;
+  background: $pink;
   width: 100vw;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   opacity: 0;
   transition: all 1s;
 }
@@ -13,7 +13,7 @@
 .about-me {
   flex: 1;
   h3 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 

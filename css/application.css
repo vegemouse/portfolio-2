@@ -82,7 +82,7 @@ a {
   text-decoration: none;
   transition: all 100ms ease-out; }
   a:hover {
-    color: #e6c1df; }
+    color: white; }
 
 h1, h2 {
   text-transform: lowercase;
@@ -93,21 +93,17 @@ h1 {
   font-size: 7em; }
 
 h2 {
-  color: black;
   font-size: 2em;
   font-weight: bold; }
 
 h3 {
-  color: black;
   font-size: 2.5em; }
 
 * {
   transition: all 200ms; }
 
 body {
-  background-color: #d0ead4;
-  height: 1000vh;
-  overflow-x: hidden; }
+  height: 1000vh; }
 
 nav {
   padding: 0 10vw;
@@ -134,7 +130,8 @@ nav {
       transform: scale(1.1); }
 
 #intro {
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   height: 90vh;
   background-color: #d0ead4;
   position: relative; }
@@ -185,11 +182,11 @@ nav {
 
 #about {
   padding: 0 10vw;
-  background: white;
+  background: #fff9fc;
   width: 100vw;
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   opacity: 0;
   transition: all 1s; }
   @media screen and (max-width: 600px) {
@@ -199,7 +196,7 @@ nav {
 .about-me {
   flex: 1; }
   .about-me h3 {
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
 
 #description {
   padding: 20px 0;
