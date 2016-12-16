@@ -6,8 +6,9 @@ a {
   font-family: $regular-font;
   text-decoration: none;
   transition: all 100ms ease-out;
+  color: $blue;
   &:hover {
-    color: lighten($pink, 50%);
+    color: $light-blue;
   }
 }
 

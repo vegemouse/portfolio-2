@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   height: 90vh;
-  background: linear-gradient($teal, $pink);;
+  background: linear-gradient($teal, $pink);
   position: relative;
   h1 {
     position: absolute;
@@ -52,5 +52,14 @@
       font-size: 1.4em;
       top: 70%;
     }
+  }
+  img {
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    animation: popout 500ms 1.5s ease-in-out both;
   }
 }

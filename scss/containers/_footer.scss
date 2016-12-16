@@ -1,0 +1,18 @@
+footer {
+  width: 100vw;
+  height: 25vh;
+  @include center-padding;
+  background: $blue;
+  position: relative;
+  width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  p {
+    @include center-it;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: white;
+    font-family: $regular-font;
+  }
+}

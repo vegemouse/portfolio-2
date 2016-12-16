@@ -38,10 +38,7 @@ $(document).ready(function() {
 
     $("#about").revealOnScroll();
     $("#projects").revealOnScroll();
-
-    for (i = 0; i < 15; i++) {
-      $(".project:nth-of-type(" + i + ")").revealOnScroll();
-    }
+    $("#contact").revealOnScroll();
 
   });
 

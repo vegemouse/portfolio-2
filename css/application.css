@@ -26,6 +26,19 @@
     top: -50px; }
   100% {
     top: 0; } }
+@keyframes popout {
+  0% {
+    border: 0;
+    height: 0;
+    width: 0; }
+  70% {
+    border: 4px solid #addab4;
+    height: 140px;
+    width: 140px; }
+  100% {
+    border: 7px solid #addab4;
+    height: 130px;
+    width: 130px; } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -80,9 +93,10 @@ div {
 a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  transition: all 100ms ease-out; }
+  transition: all 100ms ease-out;
+  color: #153872; }
   a:hover {
-    color: white; }
+    color: #6f9be4; }
 
 h1, h2 {
   text-transform: lowercase;
@@ -108,11 +122,7 @@ h4 {
 h5 {
   font-size: 1.4em; }
 
-* {
-  transition: all 100ms; }
-
 body {
-  height: 1000vh;
   background-color: #fff9fc; }
 
 nav {
@@ -129,7 +139,7 @@ nav {
   font-weight: lighter;
   letter-spacing: 3px;
   z-index: 20;
-  animation: navDrop 500ms ease-out forwards; }
+  animation: navDrop 1.5s ease-out forwards; }
   nav a {
     color: white;
     padding-bottom: 3px;
@@ -189,6 +199,14 @@ nav {
       #intro h2 {
         font-size: 1.4em;
         top: 70%; } }
+  #intro img {
+    border-radius: 50%;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    animation: popout 500ms 1.5s ease-in-out both; }
 
 #about {
   padding: 0 10vw;
@@ -210,7 +228,8 @@ nav {
 #description {
   padding: 20px 0;
   text-align: left;
-  line-height: 1.4em; }
+  font-size: 1.1em;
+  line-height: 1.5em; }
   #description p {
     margin-bottom: 20px; }
 
@@ -252,7 +271,7 @@ nav {
   padding-top: 30px;
   padding-bottom: 30px;
   opacity: 0;
-  transition: all 1s; }
+  transition: all 1s linear; }
   @media screen and (max-width: 600px) {
     #projects {
       display: block; } }
@@ -265,13 +284,11 @@ nav {
   flex: 1 32%;
   height: 250px;
   position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 500ms; }
+  overflow: hidden; }
   .project-description {
     opacity: 0;
     position: absolute;
-    background: #d0ead4;
+    background: linear-gradient(#d0ead4, #fff9fc);
     width: 100%;
     height: 100%;
     top: -5%;
@@ -299,6 +316,8 @@ nav {
   .description-content h5 {
     color: #153872;
     margin-bottom: 10px; }
+    .description-content h5:hover {
+      transform: scale(1.1); }
   .description-content p {
     color: black;
     line-height: 1.3em;
@@ -309,5 +328,48 @@ nav {
     color: #153872; }
     .description-content i:hover {
       transform: scale(1.1); }
+
+#contact {
+  padding: 0 10vw;
+  background: linear-gradient(#fff9fc, #d0ead4);
+  width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  opacity: 0;
+  transition: all 1s linear; }
+  #contact h3 {
+    text-align: center;
+    flex: 0 0 100%;
+    margin: 50px 0; }
+  #contact p {
+    padding: 0 20%;
+    text-align: center;
+    line-height: 20px; }
+
+.social {
+  font-size: 5em;
+  margin-top: 30px;
+  text-align: center;
+  position: relative; }
+
+footer {
+  width: 100vw;
+  height: 25vh;
+  padding: 0 10vw;
+  background: #153872;
+  position: relative;
+  width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 100px; }
+  footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: white;
+    font-family: "Roboto", sans-serif; }
 
 /*# sourceMappingURL=application.css.map */
