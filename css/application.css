@@ -152,7 +152,7 @@ nav {
 #intro {
   width: 100%;
   overflow: hidden;
-  height: 90vh;
+  height: 80vh;
   background: linear-gradient(#d0ead4, #fff9fc);
   position: relative; }
   #intro h1 {
@@ -213,6 +213,7 @@ nav {
   padding: 0 10vw;
   width: 100vw;
   display: flex;
+  justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
   opacity: 0;
@@ -222,6 +223,7 @@ nav {
       display: block; } }
 
 .about-me {
+  max-width: 800px;
   flex: 1; }
   .about-me h3 {
     margin-bottom: 10px; }
@@ -235,12 +237,12 @@ nav {
     margin-bottom: 20px; }
 
 .skills {
+  margin: 20px;
   position: relative;
   flex: 1;
   background-color: #ffeaf4;
-  max-width: 400px;
+  max-width: 600px;
   padding: 20px 0;
-  margin: 20px;
   border-radius: 5px;
   text-align: center;
   box-shadow: 10px 10px 20px #988; }
@@ -304,7 +306,7 @@ nav {
   .project img {
     filter: saturate(0.7) opacity(0.8);
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover; }
 
 .description-content {
