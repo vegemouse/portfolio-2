@@ -34,7 +34,7 @@
     letter-spacing: 1px;
     text-align: center;
     transition: all 400ms ease-out;
-    &:hover {
+    &:hover, &:active {
       top: 0;
       opacity: 1;
     }
