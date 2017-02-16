@@ -2,7 +2,7 @@
 #intro {
   width: 100%;
   overflow: hidden;
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient($teal, $pink);
   position: relative;
   h1 {
@@ -62,5 +62,18 @@
     transform: translateX(-50%);
     z-index: 4;
     animation: popout 500ms 1.5s ease-in-out both;
+  }
+  &-arrow {
+    z-index: 10;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollDown 600ms 2s ease-out forwards;
+    i {
+      font-size: 3em;
+      opacity: 0.5;
+      color: $blue;
+    }
   }
 }

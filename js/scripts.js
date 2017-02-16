@@ -14,6 +14,20 @@ var projects = [
     imageURL: "img/thumbnails/haven-screen.png"
   },
   {
+    name: "SciFi Artblog",
+    description: "A Sci-Fi inspired artblog with CRUD capabilities built using Ember with Firebase",
+    pageURL: "https://artblog-ac8d6.firebaseapp.com/",
+    repoURL: "https://github.com/vegemouse/artblog",
+    imageURL: "img/thumbnails/artblog-screen.png"
+  },
+  {
+    name: "Planeswalkr",
+    description: "A simple database of Magic The Gathering players built using Angular 2 and Firebase.",
+    pageURL: "https://mtg-finder.firebaseapp.com/",
+    repoURL: "https://github.com/vegemouse/planeswalkr",
+    imageURL: "img/thumbnails/planeswalkr-screen.png"
+  },
+  {
     name: "Tofu",
     description: "A website built to advertise tofu made using pure HTML and CSS. Fully responsive.",
     pageURL: "https://vegemouse.github.io/tofu/",
@@ -89,14 +103,7 @@ var projects = [
     pageURL: "https://vegemouse.github.io/ping-pong/",
     repoURL: "https://github.com/vegemouse/ping-pong",
     imageURL: "img/thumbnails/ping-pong-screen.png"
-  },
-  {
-    name: "Crater Lake",
-    description: "Crater Lake Nation Park website (without complete content). Built with the help of CSS floats.",
-    pageURL: "https://vegemouse.github.io/crater-lake/",
-    repoURL: "https://github.com/vegemouse/crater-lake",
-    imageURL: "img/thumbnails/crater-screen.png"
-  },
+  }
 ]
 
 
@@ -107,21 +114,6 @@ $(document).ready(function() {
   projects.forEach(function(project) {
     $("#projects").append("<div class='project'><img src='" + project.imageURL + "' alt='" + project.name + "'><div class='project-description'><div class='description-content'><a href='" + project.pageURL + "' target='_blank'><h5>" + project.name + "</h5></a><p>" + project.description + "</p><a href='" + project.pageURL + "' target='_blank'><i class='fa fa-window-maximize' aria-hidden='true'></i></a><a href='" + project.repoURL + "' target='_blank'><i class='fa fa-github-alt' aria-hidden='true'></i></a></div></div></div>")
   })
-
-  // <div class="project">
-  //   <img src="img/thumbnails/oregon-screen.png" alt="Oregon Wild">
-  //   <div class="project-description">
-  //     <div class="description-content">
-  //       <a href="https://vegemouse.github.io/oregon-wild/" target="_blank"><h5>Oregon Wild</h5></a>
-  //       <p>
-  //         A rebuild of the Arctic Wild site using Flexbox.
-  //       </p>
-  //       <a href="https://vegemouse.github.io/oregon-wild" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
-  //
-  //       <a href="https://github.com/vegemouse/oregon-wild" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-  //     </div>
-  //   </div>
-  // </div>
 
   // smooth scroll function
   $("a").on('click', function(event) {
