@@ -85,7 +85,7 @@ var projects = [
   },
   {
     name: "Ping Pong",
-    description: "Pig Dice game built using Javascript and jQuery.",
+    description: "JavaScript 'ping pong' test application.",
     pageURL: "https://vegemouse.github.io/ping-pong/",
     repoURL: "https://github.com/vegemouse/ping-pong",
     imageURL: "img/thumbnails/ping-pong-screen.png"
