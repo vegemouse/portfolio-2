@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 40px;
   opacity: 0;
   transition: all 300ms;
@@ -36,6 +36,7 @@
 .skills {
   margin: 20px;
   position: relative;
+  top: 50px;
   width: 30%;
   background-color: $dark-pink;
   max-width: 600px;
